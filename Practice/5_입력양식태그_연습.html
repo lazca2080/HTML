@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>p1</title>
+    </head>
+    <body>
+        <h3>기본입력</h3>
+        <form action="서버주소">
+           <table border="1">
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="uid"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                     <input type="submit" value="전송하기">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <h3>기타 입력양식태그</h3>
+        <form action="서버주소">
+            <table border="1">
+                <tr>
+                    <td colspan="5">
+                        <strong>취미를 고르세요.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" name="hobby" value="1"/>등산</label></td>
+                    <td><label><input type="checkbox" name="hobby" value="2"/>여행</label></td>
+                    <td><label><input type="checkbox" name="hobby" value="3"/>영화</label></td>
+                    <td><label><input type="checkbox" name="hobby" value="4"/>게임</label></td>
+                    <td><label><input type="checkbox" name="hobby" value="5"/>운동</label></td>
+                </tr>
+            </table>
+
+            <br/>
+
+            <table border="1">
+                <tr>
+                    <td colspan="2">
+                        <strong>성별을 선택하세요.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><input type="radio" name="gender" value="1">남</label></td>
+                    <td><label><input type="radio" name="gender" value="2">여</label></td>
+                </tr>
+            </table>
+            <br/>
+            <table border="1">
+                <tr>
+                   <td>
+                        <strong>주소를 선택하세요.</strong>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="addr">
+                            <option>서울</option>
+                            <option>대전</option>
+                            <option>대구</option>
+                            <option>부산</option>
+                            <option>광주</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <br/>
+            
+            <table border="1">
+                <tr>
+                    <td>
+                        <strong>날짜를 선택하세요.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="date" name="date"/>
+                    </td>
+                </tr>
+            </table>
+            
+            <br/>
+            <input type="submit" value="전송하기">
+            <br/>
+            <br/>
+            
+        </form>
+
+        <h3>자기소개</h3>
+        <form action="서버주소">
+            <textarea name="introduce" cols="30" rows="10"></textarea>
+            <br/>
+            <input type="submit" value="전송하기">
+
+        </form>
+
+    </body>
+
+</html>
