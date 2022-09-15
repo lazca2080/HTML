@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>4_CSS속성선택자</title>
+        <!--
+            날짜 : 2022/09/15
+            이름 : 박종협
+            내용 : CSS속성선택자 실습
+        -->
+        <style>
+            /* 속성선택자 */
+            input[name=uid]  {
+                width: 100px;
+                height: 20px;
+            }
+
+            input[name=pass] {
+                width: 100px;
+                height: 20px;
+            }
+
+            input[type=submit] {
+                width: 60px;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>속성선택자</h3>
+
+        <form action="#">
+            <h4>로그인</h4>
+            <input type="text" name="uid"/>
+            <input type="password" name="pass"/>
+            <input type="submit" value="로그인"/>
+        </form>
+    </body>
+</html>
