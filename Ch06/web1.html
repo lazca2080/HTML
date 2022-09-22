@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web1</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+
+        #wrapper {
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 95px;
+            background: #2d3a4b;
+        }
+
+        header .logo {
+            margin-top: 26px;
+            margin-left: 20px;
+        }
+
+        header > p {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header > p > a {
+            color: white;
+        }
+
+        header > ul > li > a {
+            color: white;
+            font-size: 16px;
+        }
+
+        header > ul > li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 70px;
+            bottom: 25px;
+        }
+    
+
+        main {
+            position: relative;
+            width: 100%;
+            height: 403px;
+        }
+
+        main > div > article:nth-of-type(1) {
+            position: absolute;
+            left: 35px;
+            margin: 10px;
+        }
+        
+        main > div > article:nth-of-type(2) {
+            position: absolute;
+            right: 35px;
+            margin: 10px;
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            height: 90px;
+            margin-top: 16px;
+        }
+
+        footer > img {
+            position: absolute;
+            bottom:  35px;
+        }
+
+        footer > p {
+            position: absolute;
+            bottom: 35px;
+            right: 80px;
+        }
+
+    </style>
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="#">
+                    <img src="./images/logo.png" alt="로고" class="logo">
+                </a>
+                <p>
+                    <a href="#">HOME |</a>
+                    <a href="#">LOGIN |</a>
+                    <a href="#">JOIN |</a>
+                    <a href="#">NOTICE</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCT</a>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOMER</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICE</a>
+                    </li>
+                    <li>
+                        <a href="#">RECRUIT</a>
+                    </li>
+                </ul>
+            </header>
+
+
+            <main>
+                <section>
+                    <img src="./images/main_img.png" alt="세상을 움직이는 포폴리오">
+                </section>
+                <div class="banner">
+                    <article>
+                        <a href="$">
+                            <img src="./images/banner1.png" alt="서비스소개">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#">
+                            <img src="./images/banner2.png" alt="제품소개">
+                        </a>
+                    </article>
+                </div>
+            </main>
+
+            <footer>
+                <img src="./images/footer_logo.png" alt="로고">
+                <p>
+                    " (주) 포폴리오 / 부산시 부산진구 서면로 121 / 대표 : 홍길동"
+                    <br>
+                    " 사업자번호 : 123-4567-890 / 전화 : 1588-0000 / 이메일 : master@pofolio.com"
+                    <br>
+                    <span>ⓒPofolio All rights reserved.</span>
+                </p>
+            </footer>
+
+
+
+
+
+
+        </div>
+    </body>
+    
+</html>
