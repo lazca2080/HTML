@@ -23,76 +23,69 @@
         header {
             position: relative;
             width: 100%;
-            height: 95px;
-            background: #2d3a4b;
+            height: auto;
+            background: #2d3a4b; ;
+        }
+
+        header a {
+            color: #fff;
+        }
+
+        header a:hover {
+            color: #111;
         }
 
         header .logo {
-            margin-top: 26px;
-            margin-left: 20px;
+            margin : 24px;
         }
 
         header > p {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        header > p > a {
-            color: white;
-        }
-
-        header > ul > li > a {
-            color: white;
-            font-size: 16px;
-        }
-
-        header > ul > li {
-            display: inline;
-            margin: 0 10px;
+            float: right;
+            margin: 10px 10px;
         }
 
         header > ul {
             position: absolute;
-            right: 70px;
+            right: 30px;
             bottom: 25px;
         }
-    
 
-        main {
-            position: relative;
+        header > ul > li {
+            float: left;
+            margin-right: 20px;
+        }
+
+        header > ul > li > a {
+            font-size: 17px;
+        }
+
+        main .banner {
             width: 100%;
-            height: 403px;
+            height: auto;
+            overflow: hidden;
         }
 
-        main > div > article:nth-of-type(1) {
-            position: absolute;
-            left: 35px;
-            margin: 10px;
-        }
-        
-        main > div > article:nth-of-type(2) {
-            position: absolute;
-            right: 35px;
-            margin: 10px;
+        main > .banner > article {
+            float: left;    
+            width: 50%;
+            height: 100px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            text-align: center;
         }
 
         footer {
-            position: relative;
-            width: 100%;
-            height: 90px;
-            margin-top: 16px;
+            background: #f1f1f1;
         }
 
         footer > img {
-            position: absolute;
-            bottom:  35px;
+            margin: 25px;
         }
 
         footer > p {
-            position: absolute;
-            bottom: 35px;
-            right: 80px;
+            float: right;
+            margin-right: 50px;
+            margin-top: 15px;
         }
 
     </style>
