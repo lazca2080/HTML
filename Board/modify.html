@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>글쓰기</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <style>
+        #Board > .Write {
+            width: 720px;
+            height: auto;
+            margin: 60px auto;
+        }
+        #Board > .Write > table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            height: auto;
+            border-top: 2px solid black;
+        }
+        #Board > .Write > table > caption {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        #Board > .Write > table tr {}
+        #Board > .Write > table tr > td {
+            border-bottom: 1px solid #e9e9e9;
+            padding: 10px;
+        }
+
+        #Board > .Write > table tr > td:nth-child(1) {
+            text-align: center;
+            width: 80px;
+        }
+
+        #Board > .Write > table tr > td > input {
+            width: 100%;
+            height: 30px;
+            text-align: left;
+            border: none;
+        }
+
+        #Board > .Write > table tr:nth-child(2) > td > textarea {
+            border: none;
+            width: 100%;
+            height: 300px;
+        }
+
+        #Board > .Write > div {
+            float: right;
+        }
+
+        #Board > .Write > div > button {
+            border: none;
+        }
+
+        #Board > .Write > div > button > .btnSubmit {
+            border: 1px solid #3b3c3f;
+            background: #3b3c3f;
+            color: white;
+        }
+
+        
+
+    </style>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h3>Board System v1.0</h3>
+                <p>
+                    <span>홍길동</span>님 반갑습니다.
+                    <a href="#">[로그아웃]</a>
+                </p>
+            </header>
+            <main id="Board">
+                <section class="Write">
+                    <table>
+                        <caption>글쓰기</caption>
+                        <tr>
+                            <td>제목</td>
+                            <td><input type="text" name="title" placeholder="제목을 입력하세요."></td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td><textarea name="text" id="sub" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>첨부</td>
+                            <td><input type="file" name="파일선택"></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <a href="#" class="btn">취소</a>
+                        <button><input type="submit" value="작성완료" class="btn btnSubmit"></button>
+                    </div>
+                </section>
+            </main>
+            <footer><p>ⓒCopyright by PJH.or.kr</p></footer>
+        </div>
+    </body>
+</html>
