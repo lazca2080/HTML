@@ -1,76 +1,350 @@
-/*스타일 초기화*/
-* {
-    margin:  0;
-    padding: 0;
-    font: normal 12px '고딕';
-}
+            * {
+                margin:  0;
+                padding: 0;
+                font: normal 12px '고딕';
+            }
 
-ul, ol {list-style: none;}
-a {text-decoration: none; color: black;}
-input, textarea {outline: none;}
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            input, textarea {outline: none;}
 
-#wrapper {
-    width: 100%;
-    height: auto;
-}
+            #wrapper {
+                width: 100%;
+                height: auto;
+            }
 
-/*헤더*/
-header {
-    width: 100%;
-    height: 80px;
-}
-header > div {
-    width: 1000px;
-    height: auto;
-    margin: 0 auto;
-}
+            /* 헤더 */
+            header {
+                width: 100%;
+                height: 80px;
+                background: url(../img/header_bg.gif);
+            }
+            header > div {
+                position: relative;
+                width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+            }
 
-main {
-    width: 1000px;
-    height: auto;
-    margin: 5px auto;
-}
-main > div {
-    overflow: hidden;
-}
-main > div > .banner {
-    float: left;
-    width: 670px;
-    height: 320px;
-}
-main > div > .call {
-    float: right;
-    width: 326px;
-    height: 133px;
-}
-main > div > .qna {
-    float: right;
-    width: 326px;
-    height: 182px;
-    margin-top: 5px;
-}
-main > section {
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-main > section > aside {
-    width: 195px;
-    height: 760px;
-    float: left;
-    margin-top: 5px;
-}
-main > section > article {
-    float: right;
-    width: 800px;
-    height: 250px;
-    margin-top: 5px;
-}
+            header > div .logo {margin-top: 6px;}
+            header > div .gnb {
+                width: 620px;
+                height: 32px;
+                float: right;
+                margin-top: 18px;
+            }
+            header > div .gnb > li {
+                float: left;
+                width: 20%;
+                height: 100%;
+                text-align: right;
+            }
+            header > div .gnb > li > a {
+                font-weight: bold;
+                font-size: 17px;
+            }
+            header > div .gnb > li > a:hover {color: #7b231f;}
 
-footer {
-    width: 1000px;
-    height: 130px;
-    border: 1px solid blue;
-    box-sizing: border-box;
-}
+            header > div .latest {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50%;
+                height: 30px;
+            }
+            header > div .latest > a:nth-child(1) {
+                position: relative;
+                top: 3px;
+            }
+
+            header > div .latest > a:nth-child(2) {
+                position: relative;
+                top: -5px;
+                color: #555;
+            }
+
+            header > div .latest > a:nth-child(2)::before {content: url(../img/ico_latest.gif);}
+
+             /* 메인 */
+
+             main {
+                width: 1000px;
+                height: auto;
+                margin: 5px auto;
+            }
+            main > div { overflow: hidden; }
+
+            main > div > .banner {
+                float: left;
+                width: 670px;
+                height: 320px;
+                background: url(../img/main_banner_bg.jpg) no-repeat;
+                border: 1px solid #d7d7d7;
+                box-sizing: border-box;
+            }
+
+            main > div > .banner > img { margin-top: 100px; margin-left: 160px; }
+            main > div > .banner > ul {
+                float: right;
+                width: 80px;
+                height: 100%;
+                border-left: 1px solid #d7d7d7;
+                overflow: hidden;
+            }
+
+            main > div > .banner > ul > img { display: block; }
+
+            main > div > .banner > ul > li {
+                width: 100%;
+                height: 41px;
+                border-top: 1px solid #d7d7d7;
+                box-sizing: border-box;
+            }
+
+            main > div > .banner > ul > li > a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #f2f2f2;
+                text-align: center;
+                line-height: 41px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            main > div > .banner > ul > li > a:hover {background: #fefefe;}
+
+            main > div > .call {
+                position: relative;
+                float: right;
+                width: 326px;
+                height: 133px;
+                border: 1px solid #d7d7d7;
+                box-sizing: border-box;
+                background: #f2f2f2;
+            }
+
+            main > div > .call > img:nth-child(1) { position: absolute; left: 20px; top: 20px;}
+            main > div > .call > img:nth-child(2) { position: absolute; left: 20px; top: 46px; z-index: 1;}
+            main > div > .call > img:nth-child(3) { position: absolute; left: 20px; bottom: 20px; z-index: 1;}
+            main > div > .call > img:nth-child(4) { position: absolute; right: 0; top: 0;}
+
+            main > div > .qna {
+                float: right;
+                width: 326px;
+                height: 182px;
+                border: 1px solid #d7d7d7;
+                box-sizing: border-box;
+                margin-top: 5px;
+                padding: 20px;
+            }
+            
+            main > div > .qna > h3 {font-weight: bold; font-size: 14px;}
+
+            main > div > .qna > table {
+                width: 100%;
+                height: auto;
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin-top: 6px;
+            }
+            main > div > .qna > table tr {}
+            main > div > .qna > table tr > td {color: #6a6a6a;}
+            main > div > .qna > table tr > td:nth-child(2) {
+                overflow: hidden;
+                display: inline-block;
+                width: 219px;
+                white-space: nowrap;
+                line-height: 20px;
+                text-overflow: ellipsis;
+            }
+            main > div > .qna > table tr > td > img {}
+            main > div > .qna > table tr > td > a {color: #6a6a6a;}
+            main > div > .qna > table a:hover {text-decoration: underline;}
+
+
+            main > section {
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+            main > section > aside {
+                float: left;
+                width: 195px;
+                height: 760px;
+                border: 1px solid #d7d7d7;
+                margin-top: 5px;
+                box-sizing: border-box;
+            }
+
+            main > section > aside > .notice {
+                width: 100%;
+                height: 204px;
+                padding: 10px;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+            
+            
+            main > section > aside > .notice > h3 {font-weight: bold; font-size: 14px;}
+            main > section > aside > .notice > ul {
+                width: 100%;
+                height: auto;
+                margin-top: 6px;
+            }
+            main > section > aside > .notice > ul > li {
+                overflow: hidden;
+                width: 100%;
+                height: 20px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 20px;
+            }
+
+            main > section > aside > .notice > ul > li > a::before {content: url(../img/ico_latest.gif);}
+
+            main > section > aside > .quick {
+                padding: 10px;
+            }
+            main > section > aside > .quick > h3 {font-weight: bold; font-size: 14px;}
+            main > section > aside > .quick > a {
+                display: block;
+                width: 100%;
+                height: 34px;
+                border: 1px solid #999999;
+                background: #f6f6f6;
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                font-size: 0;
+                margin-top: 6px;
+            }
+
+            main > section > aside > .quick > a:nth-of-type(1) {background-image: url(../img/aside_quick_court.png);}
+            main > section > aside > .quick > a:nth-of-type(2) {background-image: url(../img/aside_quick_google.png);}
+            main > section > aside > .quick > a:nth-of-type(3) {background-image: url(../img/aside_quick_naver_map.png);}
+            main > section > aside > .quick > a:nth-of-type(4) {background-image: url(../img/aside_quick_naver_subway.png);}
+
+
+            main > section > aside > .sell {
+                position: relative;
+                left: -1px;
+                display: block;
+                width: 195px;
+                height: 83px;
+                border: 1px solid #999999;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin-top: 4px;
+            }
+
+            main > section > aside > .sell > img:nth-child(1) {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+            main > section > aside > .sell > img:nth-child(2) {float: right;}
+
+            main > section > aside > .buy {
+                position: relative;
+                left: -1px;
+                display: block;
+                width: 195px;
+                height: 83px;
+                border: 1px solid #999999;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin-top: 6px;
+            }
+
+            main > section > aside > .buy > img:nth-child(1) {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+
+            main > section > aside > .buy > img:nth-child(2) {float: right;}
+            
+            main > section > aside > .banner {
+                position: relative;
+                margin-top: 6px;
+                left: -1px;
+                width: 195px;
+                height: 167px;
+                border: 1px solid #999999;
+                box-sizing: border-box;
+                background-image: url(../img/aside_banner_bg.jpg);
+            }
+
+            main > section > aside > .banner > img:nth-child(1) {
+                float: right;
+            }
+            main > section > aside > .banner > img:nth-child(2) {
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            main > section > aside > .banner > a > img {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+
+            main > section > article {
+                float: right;
+                width: 800px;
+                height: 250px;
+                border: 1px solid #999999;
+                box-sizing: border-box;
+                margin-top: 5px;
+                padding: 16px;
+            }
+
+            main > section > article > h3 {font-weight: bold; font-size: 14px;}
+            main > section > article > h3 > a {float: right;}
+            main > section > article > ul {
+                width: 100%;
+                height: auto;
+                margin-top: 26px;
+                overflow: hidden;
+            }
+            main > section > article > ul > li {
+                width: 20%;
+                height: 100%;
+                float: left;
+            }
+
+            main > section > article > ul .thumb {
+                width: 150px;
+                height: 100px;
+            }
+
+            main > section > article > ul a {
+                display: block;
+                width: 95%;
+                text-align: center;
+            }
+
+            main > section > article > ul a:hover {text-decoration: underline;}
+
+            footer {
+            width: 1000px;
+            height: 130px;
+            border: 1px solid #d7d7d7;
+            border-top: 2px solid #777777;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            }
+
+            footer > p {
+                font-size: 11.5px;
+                color: #585858;
+                line-height: 20px;
+                margin-left: 10px;
+            }
+
+            footer > p > span {
+                display: block;
+                margin-top: 6px;
+                font-weight: bold;
+            }
