@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodShop</title>
+    <!--
+        날짜 : 2022/11/21
+        이름 : 박종협
+        내용 : FoodShop 수행평가
+    -->
+    <style>
+        /* 전체 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '돋움';
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+
+        #wrapper {
+            width: 100%;
+            height: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        /* 헤더 */
+
+        header {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        header > div {
+            width: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        header > div:nth-child(1) { height: 36px;}
+        header > div:nth-child(2) { height: 100px;}
+        header > div:nth-child(3) { height: 54px;}
+
+        header > div:nth-child(1) > div {
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid orange;
+        }
+        header > div:nth-child(2) > article {
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid orange;
+        }
+        header > div:nth-child(3) > nav {
+            width: 1100px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid orange;
+        }
+
+        /* 메인 */
+
+        main {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        main > section {
+            width: 100%;
+            height: auto;
+            border: 1px solid green;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        main > section > article {
+            width: 1100px;
+            height: 100%; 
+            margin: 0 auto;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+
+        main > .go > article {
+            padding: 30px 10px;
+        }
+
+        main > section:nth-child(1) { height: 352px; }
+        main > section:nth-child(2) { height: 520px; }
+        main > section:nth-child(3) { height: 190px; }
+        main > section:nth-child(4) { height: 660px; }
+        main > section:nth-child(5) { height: 200px; }
+        main > section:nth-child(6) { height: 660px; }
+
+        main > section:nth-child(2) > article > div > div {
+            float: left;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
+
+        main > section:nth-child(2) > article  > div > div:nth-child(1) {
+            width: 412px;
+            height: 450px;
+            margin-right: 11px;
+        }
+        main > section:nth-child(2) > article  > div > div:nth-child(2) {
+            width: 322px;
+            height: 220px;
+            margin-right: 11px;
+        }
+        main > section:nth-child(2) > article  > div > div:nth-child(3) {
+            width: 322px;
+            height: 220px;
+        }
+        main > section:nth-child(2) > article  > div > div:nth-child(4) {
+            width: 322px;
+            height: 220px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        main > section:nth-child(2) > article  > div > div:nth-child(5) {
+            width: 322px;
+            height: 220px;
+            margin-top: 10px;
+        }
+
+        main > .four > article > ul {
+            width: 100%;
+            height: 312px;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+
+        main > .four > article > ul > li {
+            float: left;
+            width: 25%;
+            height: 100%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
+
+        main > .six > article > ul {
+            width: 100%;
+            height: 312px;
+            border: 1px solid grey;
+            box-sizing: border-box;
+        }
+
+        main > .six > article > ul > li {
+            float: left;
+            width: 25%;
+            height: 100%;
+            border: 1px solid pink;
+            box-sizing: border-box;
+        }
+
+        /* 푸터 */
+
+        footer {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        footer > div {
+            width: 100%;
+            height: auto;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        footer > div > div {
+            margin: 0 auto;
+        }
+
+        footer > div:nth-child(1) { height: 50px; }
+        footer > div:nth-child(2) { height: 156px; }
+
+        footer > div:nth-child(1) > div {
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+
+        footer > div:nth-child(2) > div {
+            width: 1100px;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <article></article>
+            </div>
+            <div>
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <article></article>
+            </section>
+            <section class="go">
+                <article>
+                    <div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </div>
+                </article>
+            </section>
+            <section class="three">
+                <article></article>
+            </section>
+            <section class="four">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="five">
+                <article></article>
+            </section>
+            <section class="six">
+                <article>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

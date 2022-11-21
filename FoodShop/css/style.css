@@ -1,0 +1,439 @@
+    /* 전체 스타일 초기화 */
+    * {
+        margin: 0;
+        padding: 0;
+        font: normal 12px 'noto sans korean';
+    }
+
+    ul, ol {list-style: none;}
+    a {text-decoration: none; color: #111;}
+
+    #wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 헤더 */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    header > div {
+        width: 100%;
+    }
+
+    header > div:nth-child(1) { 
+        height: 36px;
+        border-bottom: 1px solid #dcdcdc;
+        box-sizing: border-box;
+    }
+    header > div:nth-child(2) { height: 100px;}
+    header > div:nth-child(3) { height: 54px; background: #40382e;}
+
+    header > div:nth-child(1) > div {
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    header > div:nth-child(2) > article {
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    header > div:nth-child(3) > nav {
+        width: 1100px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    header > .top > div > p {
+        float: right;
+        margin-top: 10px;
+    }
+
+    header > .mid > article {
+        position: relative;
+    }
+    header > .mid > article > a:nth-child(1) {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    header > .mid > article > a:nth-child(1) > b {
+        color: #ff6a00;
+        font-size: 15px;
+        font-weight: 500;
+        padding-left: 5px;
+    }
+
+    header > .mid > article > a:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        margin-left: -173px;
+    }
+    header > .mid > article > a:nth-child(3) {
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+    }
+    
+    header > .bottom > nav > .menu {
+        width: 100%;
+        height: 100%;
+    }
+
+    header > .bottom > nav > .menu > li {
+        float: left;
+        width: 11.11%;
+        height: 100%;
+    }
+
+    header > .bottom > nav > .menu > li > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 54px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+
+    header > .bottom > nav > .menu > li > a:hover {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 54px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #ff6a00;
+    }
+
+    /* 메인 */
+
+    main {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main > section {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    main > section > article {
+        width: 1100px;
+        height: 100%; 
+        margin: 0 auto;
+    }
+
+    main > .go > article {
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+
+    main > section:nth-child(1) { height: 352px; }
+    main > section:nth-child(2) { height: 520px; }
+    main > section:nth-child(3) { height: 190px; }
+    main > section:nth-child(4) { height: 660px; }
+    main > section:nth-child(5) { height: 200px; }
+    main > section:nth-child(6) { height: 660px; }
+
+    main > section:nth-child(2) > article > div > div {
+        float: left;
+    }
+
+    main > section:nth-child(2) > article  > div > div:nth-child(1) {
+        width: 412px;
+        height: 450px;
+        margin-right: 11px;
+    }
+    main > section:nth-child(2) > article  > div > div:nth-child(2) {
+        width: 322px;
+        height: 220px;
+        margin-right: 13px;
+    }
+    main > section:nth-child(2) > article  > div > div:nth-child(3) {
+        width: 322px;
+        height: 220px;
+    }
+    main > section:nth-child(2) > article  > div > div:nth-child(4) {
+        width: 322px;
+        height: 220px;
+        margin-right: 13px;
+        margin-top: 10px;
+    }
+    main > section:nth-child(2) > article  > div > div:nth-child(5) {
+        width: 322px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+    main > .four > article > ul {
+        width: 100%;
+        height: 312px;
+    }
+
+    main > .four > article > ul > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    main > .six > article > ul {
+        width: 100%;
+        height: 312px;
+    }
+
+    main > .six > article > ul > li {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    main > .slider {
+        background: #ffeed4;
+    }
+
+    main > .slider > article {
+        position: relative;
+        overflow: hidden;
+    }
+
+    main > .slider > article > img:nth-child(1) {
+        position: absolute;
+        z-index: 1;
+    }
+
+    main > .slider > article > img:nth-child(2) {
+        position: absolute;
+        z-index: 2;
+    }
+
+    main > .slider > article > img:nth-child(3) {
+        position: absolute;
+        z-index: 3;
+    }
+
+    main > .slider > article > img:nth-child(4) {
+        position: absolute;
+        z-index: 4;
+    }
+
+    main > .slider > article > img:nth-child(5) {
+        position: absolute;
+        z-index: 5;
+    }
+
+    main > .three {
+        background-image: url(../img/oneday_bg.png);
+        background-size: cover;
+        background-position: 50% center;
+    }
+
+    main > .three > article > img {
+        margin-top: 50px;
+    }
+
+    main > .four > article > img {
+        margin-top: 60px;
+        margin-bottom: 35px;
+        margin-left: 354px;
+    }
+
+    main > .four > article > ul {}
+
+    main > .four > article > ul > li {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    main > .four > article > ul > li > a > img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    main > .four > article > .health1 > li > a > h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    main > .four > article > .health1 > li > a > p {
+        font-size: 13px;
+        font-weight: bold;
+        color: #959595;
+        margin: 12px 0 26px;
+        text-align: center;
+    }
+
+    main > .four > article > .health1 > li > a > h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff6a00;
+        text-align: center;
+    }
+
+    main > .four > article > a {
+        display: block;
+        width: 300px;
+        height: 50px;
+        border: 1px solid #efefef;;
+        box-shadow: 0px 2px 2px #999;
+        text-align: center;
+        line-height: 50px;
+        margin: 56px auto 0;
+        color: #626262;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    main > .five {
+        background-image: url(../img/premium_bg.png);
+        background-size: cover;
+        background-position: 50% center;
+    }
+
+    main > .five > article { text-align:  center; }
+
+    main > .five > article > a > img { margin-top: 52px; }
+
+    main > .six > article > img {
+        margin-top: 61px;
+        margin-bottom: 35px;
+        margin-left: 397px;
+    }
+
+    main > .six > article > ul > li {
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        position: absolute;
+        top: 170px;
+    }
+
+    main > .six > article > ul > li > a > img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    main > .six > article > .health2 > li > a > h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    main > .six > article > .health2 > li > a > p {
+        font-size: 13px;
+        font-weight: bold;
+        color: #959595;
+        margin: 12px 0 26px;
+        text-align: center;
+    }
+
+    main > .six > article > .health2 > li > a > h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff6a00;
+        text-align: center;
+    }
+
+    main > .six > article > a {
+        display: block;
+        width: 300px;
+        height: 50px;
+        border: 1px solid #efefef;;
+        box-shadow: 0px 2px 2px #999;
+        text-align: center;
+        line-height: 50px;
+        margin: 56px auto 0;
+        color: #626262;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* 푸터 */
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer > div {
+        width: 100%;
+        height: auto;
+    }
+
+    footer > div > div {
+        margin: 0 auto;
+    }
+
+    footer > div:nth-child(1) { height: 50px; }
+    footer > div:nth-child(2) { height: 156px; }
+
+    footer > div:nth-child(1) > div {
+        width: 1100px;
+        height: 100%;
+    }
+
+    footer > div:nth-child(2) > div {
+        width: 1100px;
+        height: 100%;
+    }
+
+    footer > div:nth-child(1) { background-color: #626262; }
+    footer > div:nth-child(2) { background: #434343; }
+
+    footer > div:nth-child(1) > div > p { 
+        padding-top: 13px; 
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer > div:nth-child(1) > div > p > a { 
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer > div:nth-child(1) > div > p > a:nth-child(1) {
+        color: #ff6a00;
+    }
+
+    footer > div:nth-child(1) > div > p > a:nth-child(2) {
+        color: white;
+    }
+
+    footer > div:nth-child(1) > div > p > a:nth-child(3) {
+        color: white;
+    }
+
+    footer > div:nth-child(2) > div {}
+
+    footer > div:nth-child(2) > div > p {
+        float: left;
+        margin-top: 16px;
+        color: #aca9a9;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+    footer > div:nth-child(2) > div > img {
+        float: right;
+        margin-top: 16px;
+    }

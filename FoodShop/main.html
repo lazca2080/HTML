@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!--
+        날짜 : 2022/11/21
+        이름 : 박종협
+        내용 : FoodShop 수행평가
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        
+        $(function(){
+            
+            let slides = $('.slider > article > img');
+
+            let i = 0;
+
+            setInterval(()=>{
+
+                slides.eq(i).animate({'left':'-100%'}, 1000);
+                i++;
+
+                if(i >= 5){
+                    i=0;
+                }
+                slides.eq(i).css('left','100%').animate({'left':'0'}, 1000);
+            }, 3000);
+        });
+
+    </script>
+    <style>
+        main > .slider > article {
+            position: relative;
+            overflow: hidden;
+        }
+
+        main > .slider > article > img:nth-child(1) {
+            position: absolute;
+            z-index: 5;
+        }
+
+        main > .slider > article > img:nth-child(2) {
+            position: absolute;
+            z-index: 4;
+        }
+
+        main > .slider > article > img:nth-child(3) {
+            position: absolute;
+            z-index: 3;
+        }
+
+        main > .slider > article > img:nth-child(4) {
+            position: absolute;
+            z-index: 2;
+        }
+
+        main > .slider > article > img:nth-child(5) {
+            position: absolute;
+            z-index: 1;
+        }
+
+        main > .six > article {
+            position: relative;
+            overflow: hidden;
+        }
+
+        main > .six > article > ul > li {
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        position: absolute;
+        top: 170px;
+    }
+
+        main > .six > article > ul > li:nth-child(1) {
+            left: 0;
+        }
+        
+        main > .six > article > ul > li:nth-child(2) {
+            left : 25%
+        }
+
+        main > .six > article > ul > li:nth-child(3) {
+            left : 50%
+        }
+
+        main > .six > article > ul > li:nth-child(4) {
+            left : 75%
+        }
+
+        main > .six > article > ul > li:nth-child(5) {
+            left : 100%
+        }
+
+        main > .six > article > ul > li:nth-child(6) {
+            left : 125%
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="top">
+                <div>
+                    <p>
+                        <a href="#">로그인 |</a>
+                        <a href="#">마이페이지 |</a>
+                        <a href="#">관심상품(0) |</a>
+                        <a href="#">장바구니(0)</a>
+                    </p>
+                </div>
+            </div>
+            <div class="mid">
+                <article>
+                    <a href="#"><img src="./img/ico_shopping.png" alt="쇼핑"><b>SHOPPING</b> 주문조회 바로가기</a>
+                    <a href="#"><img src="./img/header_txt_logo.png" alt="로고"></a>
+                    <a href="#"><img src="./img/header_txt_onday.png" alt="원데이"></a>
+                </article>
+            </div>
+            <div class="bottom">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">채소/과일/곡류</a></li>
+                        <li><a href="#">수산</a></li>
+                        <li><a href="#">정육/달걀</a></li>
+                        <li><a href="#">면/양념/소스</a></li>
+                        <li><a href="#">음료/주류</a></li>
+                        <li><a href="#">냉장/냉동식품</a></li>
+                        <li><a href="#">캔/통조림</a></li>
+                        <li><a href="#">가공/간편식품</a></li>
+                        <li><a href="#">생활잡화</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="slider">
+                <article>
+                    <img src="./img/slider_banner1.jpg" alt="배너1">
+                    <img src="./img/slider_banner2.jpg" alt="배너2">
+                    <img src="./img/slider_banner3.jpg" alt="배너3">
+                    <img src="./img/slider_banner4.jpg" alt="배너4">
+                    <img src="./img/slider_banner5.jpg" alt="배너5">
+                </article>
+            </section>
+            <section class="go">
+                <article>
+                    <div>
+                        <div><a href="#"><img src="./img/main_go_banner1.jpg" alt="1일1야채"></a></div>
+                        <div><a href="#"><img src="./img/main_go_banner2.jpg" alt="특별이벤트"></a></div>
+                        <div><a href="#"><img src="./img/main_go_banner3.jpg" alt="할인상품"></a></div>
+                        <div><a href="#"><img src="./img/main_go_banner4.jpg" alt="프리미엄상품"></a></div>
+                        <div><a href="#"><img src="./img/main_go_banner5.jpg" alt="인기상품"></a></div>
+                    </div>
+                </article>
+            </section>
+            <section class="three">
+                <article>
+                    <img src="./img/oneday_txt.png" alt="원데이 번개장터">
+                </article>
+            </section>
+            <section class="four">
+                <article>
+                    <img src="./img/vegetable_tit.png" alt="1일 1야채">
+                    <ul class="health1">
+                        <li><a href="">
+                            <img src="./img/thumb1.jpg" alt="thumb1">
+                            <h3>플레인요거트 4개입</h3>
+                            <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
+                            <h2>7,500원</h2>
+                        </a></li>
+                        <li><a href="">
+                            <img src="./img/thumb2.jpg" alt="thumb1">
+                            <h3>프랑스 더치커피</h3>
+                            <p>프랑스만의 방식으로 내려진 더치커피</p>
+                            <h2>5,000원</h2>
+                        </a></li>
+                        <li><a href="">
+                            <img src="./img/thumb3.jpg" alt="thumb1">
+                            <h3>로얄밀크 홍차</h3>
+                            <p>일본에서 온 깊고 풍부한 맛의 로얄밀크티</p>
+                            <h2>17,000원</h2>
+                        </a></li>
+                        <li><a href="">
+                            <img src="./img/thumb4.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
+                    </ul>
+                    <a href="#">전체 상품 보기</a>
+                </article>
+            </section>
+            <section class="five">
+                <article>
+                    <a href="#"><img src="./img/main_premium_tit.png" alt="엄선된 상품"></a>
+                </article>
+            </section>
+            <section class="six">
+                <article>
+                    <img src="./img/seafood_tit.png" alt="수산">
+                    <ul class="health2">
+                        <li class="current"><a href="#">
+                            <img src="./img/thumb1.jpg" alt="thumb1">
+                            <h3>플레인요거트 4개입</h3>
+                            <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
+                            <h2>7,500원</h2>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./img/thumb2.jpg" alt="thumb1">
+                            <h3>프랑스 더치커피</h3>
+                            <p>프랑스만의 방식으로 내려진 더치커피</p>
+                            <h2>5,000원</h2>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="./img/thumb3.jpg" alt="thumb1">
+                            <h3>로얄밀크 홍차</h3>
+                            <p>일본에서 온 깊고 풍부한 맛의 로얄밀크티</p>
+                            <h2>17,000원</h2>
+                        </a></li>
+                        <li><a href="">
+                            <img src="./img/thumb4.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
+                        <li class="next1"><a href="#">
+                            <img src="./img/thumb5.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
+                        <li class="next2"><a href="#">
+                            <img src="./img/thumb6.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
+                    </ul>
+                    <a href="#">전체 상품 보기</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <p>
+                        <a href="#">이용약관</a>
+                        &nbsp|&nbsp
+                        <a href="#">이용안내</a>
+                        &nbsp|&nbsp
+                        <a href="#">개인정보취급방침</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        상호명 : 쇼핑몰 &nbsp 대표 : 홍길동 &nbsp 메일 : master@foodshop.com<br>
+                        통신판매업신고번호 : 123-456-7890 &nbsp 사업자등록번호 : 132-45-7890 &nbsp 대표번호 : 070-1234-5678<br>
+                        팩스번호 : 051-1234-5678 &nbsp 개인정보관리자 : 김유신 &nbsp 주소 : 부산시 부산진구 서전로 123
+                    </p>
+                    <img src="./img/footer_tel.png" alt="고객센터">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
