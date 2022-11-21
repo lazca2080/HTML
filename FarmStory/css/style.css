@@ -137,28 +137,50 @@
         main > .slider {
             position: relative;
             height: 312px;
+            overflow: hidden;
         }
 
-        main > .slider > img:nth-child(1){}
-        main > .slider > img:nth-child(2){}
-        main > .slider > img:nth-child(3){}
-        main > .slider > img:nth-child(4){}
-        main > .slider > img:nth-child(5){}
+        main > .slider > div {
+            position: relative;
+        }
+
+        main > .slider > div > img:nth-child(1) {
+            position: absolute;
+            width: 980px;
+            height: 312px;
+            z-index: 1;
+        }
+        main > .slider > div > img:nth-child(2) {
+            position: absolute;
+            width: 980px;
+            height: 312px;
+            z-index: 2;   
+        }
+        main > .slider > div > img:nth-child(3) {
+            position: absolute;
+            width: 980px;
+            height: 312px;
+            z-index: 3;
+        }
 
         main > .slider > img:nth-child(1) {
-            float: right;
+            position: absolute;
+            right: 0;
+            z-index: 4;
         }
     
         main > .slider > img:nth-child(2) {
             position: absolute;
             top: 42px;
             right:  13px;
+            z-index: 5;
         }
     
         main > .slider > img:nth-child(3) {
             position: absolute;
             bottom: 0;
             right: 13px;
+            z-index: 6;
     
         }
     
@@ -166,6 +188,7 @@
             position: absolute;
             right: 5px;
             top: 5px;
+            z-index: 7;
         }
     
         main > .slider > img:nth-child(5) {
@@ -250,9 +273,7 @@
             float: left;
             width: 33.33%;
             height: 100%;
-
         }
-
 
         main > .latest > div > table {
             position: absolute;
@@ -266,6 +287,10 @@
             left: 2px;
         }
 
+        main > .latest > div > a{
+            padding: 10px;
+        }
+
         main > .latest > div > table > tbody > tr > td > a {
             display: block;
             width: 140px;
@@ -273,6 +298,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             line-height: 18px;
+            color: #6a6a6a;
+        }
+
+        main > .latest > div > table > tbody > tr > td {
             color: #6a6a6a;
         }
 

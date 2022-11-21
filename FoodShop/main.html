@@ -30,6 +30,27 @@
             }, 3000);
         });
 
+        $(function(){
+
+            let lollings = $('.six > article > ul');
+            let lolling = $('.six > article > ul > li');
+
+            let z = 0;
+
+            setInterval(()=>{
+
+                lolling.eq(z).animate({'left':'-25%'}, 3000);
+                lolling.eq(z+1).animate({'left':'0%'}, 3000);
+                lolling.eq(z+2).animate({'left':'25%'}, 3000);
+                lolling.eq(z+3).animate({'left':'50%'}, 3000);
+                lolling.eq(z+4).animate({'left':'75%'}, 3000);
+                lolling.eq(z+5).animate({'left':'100%'}, 3000);
+
+                lolling.eq(z).css('left','125%');
+                
+            }, 2000);
+        });
+
     </script>
     <style>
         main > .slider > article {
@@ -64,7 +85,12 @@
 
         main > .six > article {
             position: relative;
-            overflow: hidden;
+        }
+
+        main > .six > article > ul {
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
         main > .six > article > ul > li {
