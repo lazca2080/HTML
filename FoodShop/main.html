@@ -36,19 +36,26 @@
             let lolling = $('.six > article > ul > li');
 
             let z = 0;
+            let y = 25;
 
             setInterval(()=>{
 
-                lolling.eq(z).animate({'left':'-25%'}, 3000);
-                lolling.eq(z+1).animate({'left':'0%'}, 3000);
-                lolling.eq(z+2).animate({'left':'25%'}, 3000);
-                lolling.eq(z+3).animate({'left':'50%'}, 3000);
-                lolling.eq(z+4).animate({'left':'75%'}, 3000);
-                lolling.eq(z+5).animate({'left':'100%'}, 3000);
+                if(y >= 175) {
+                    z = 0;
+                    y = 25;
+                    lolling.removeAttr('style');
+                    lollings.removeAttr('style');
+                }
 
-                lolling.eq(z).css('left','125%');
+                lollings.animate({'left':-y+'%'}, 3000);
                 
-            }, 2000);
+                setTimeout(() => {
+                    lolling.eq(z-1).css('left',100+y+'%');
+                }, 3000);
+
+                z++;
+                y+=25;                
+            }, 3500);
         });
 
     </script>
@@ -83,8 +90,52 @@
             z-index: 1;
         }
 
+        main > .four > article {
+            position: relative;
+            overflow: hidden;
+        }
+
+        main > .four > article > ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        main > .four > article > ul > li {
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        position: absolute;
+        top: 170px;
+    }
+
+        main > .four > article > ul > li:nth-child(1) {
+            left: 0;
+        }
+        
+        main > .four > article > ul > li:nth-child(2) {
+            left : 25%
+        }
+
+        main > .four > article > ul > li:nth-child(3) {
+            left : 50%
+        }
+
+        main > .four > article > ul > li:nth-child(4) {
+            left : 75%
+        }
+
+        main > .four > article > ul > li:nth-child(5) {
+            left : 100%
+        }
+
+        main > .four > article > ul > li:nth-child(6) {
+            left : 125%
+        }
+
         main > .six > article {
             position: relative;
+            overflow: hidden;
         }
 
         main > .six > article > ul {
@@ -215,6 +266,18 @@
                             <h3>스위스 핫초코 320g</h3>
                             <p>스위스에서 온 핫초코로 따뜻한 연말</p>
                             <h2>4,000원</h2>
+                        <li class="next1"><a href="#">
+                            <img src="./img/thumb5.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
+                        <li class="next2"><a href="#">
+                            <img src="./img/thumb6.jpg" alt="thumb1">
+                            <h3>스위스 핫초코 320g</h3>
+                            <p>스위스에서 온 핫초코로 따뜻한 연말</p>
+                            <h2>4,000원</h2>
+                        </a></li>
                         </a></li>
                     </ul>
                     <a href="#">전체 상품 보기</a>
