@@ -58,6 +58,34 @@
             }, 3500);
         });
 
+        $(function(){
+
+        let lollings = $('.four > article > ul');
+        let lolling = $('.four > article > ul > li');
+
+        let z = 0;
+        let y = 25;
+
+        setInterval(()=>{
+
+            if(y >= 175) {
+                z = 0;
+                y = 25;
+                lolling.removeAttr('style');
+                lollings.removeAttr('style');
+            }
+
+            lollings.animate({'left':-y+'%'}, 3000);
+            
+            setTimeout(() => {
+                lolling.eq(z-1).css('left',100+y+'%');
+            }, 3000);
+
+            z++;
+            y+=25;                
+        }, 3500);
+        });
+
     </script>
     <style>
         main > .slider > article {
